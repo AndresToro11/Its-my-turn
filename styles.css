@@ -1,0 +1,130 @@
+html{
+    min-height:100%;/* make sure it is at least as tall as the viewport */
+    position:relative;
+}
+body{
+    height:100%; /* force the BODY element to match the height of the HTML element */
+}
+
+#cloud-container{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    overflow-x: hidden;
+}
+
+.seccion-principal-nombre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    background-color: grey;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.menu-li{
+    margin: 5px;
+}
+
+.menu-a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo{
+    background-color: rgb(85, 85, 85);
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* ------------------------------------ Animacion ............................. */
+
+.toro{
+    position: absolute;
+    height: 37%;
+    width: 44%;
+    left: 7%;
+    top: 37%;
+}
+
+.cara{
+    position: absolute;
+    height: 17%;
+    width: 32%;
+    left: -67%;
+    top: 37.5%;
+    opacity: 1;
+
+    animation-name: parpadeo;
+    animation-duration: 0.2s;
+    animation-delay: 1s;
+}
+
+@keyframes parpadeo {
+    50%  {opacity: 1;}
+    100%  {animation-delay: 4s;}
+  }
+
+.nariz{
+    position: absolute;
+    height: 6%;
+    width: 9%;
+    left: 15.5%;
+    top: 59%;
+
+    
+  animation-name: nariz;
+  animation-duration: 4s;
+}
+
+@keyframes nariz {
+    50%  {height: 7%; 
+        width: 10%;
+        left: 15%;
+        top: 58%;}
+  }
+
+.humo-derecha{
+    position: absolute;
+    height: 10%;
+    width: 10%;
+    left: 23%;
+    top: 52%;
+    opacity: 0;
+
+    animation-name: humos;
+    animation-duration: 2s;
+    animation-delay: 1s;
+}
+
+.humo-izquierda{
+    position: absolute;
+    height: 10%;
+    width: 10%;
+    left: 7%;
+    top: 52%;
+    transform: scaleX(-1);
+    opacity: 0;
+
+    animation-name: humos;
+    animation-duration: 2s;
+    animation-delay: 1s;
+}
+
+@keyframes humos {
+    50%  {opacity: 1;}
+  }
+
+  /* ------------------------------------ Animacion ............................. */
