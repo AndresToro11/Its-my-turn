@@ -4,6 +4,7 @@ html{
 }
 body{
     height:100%; /* force the BODY element to match the height of the HTML element */
+    font-family: 'Ubuntu' !important;
 }
 
 #cloud-container{
@@ -19,13 +20,20 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
+
+
 
 .menu{
     background-color: grey;
     text-decoration: none;
     display: flex;
     justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    opacity: 0.8;
 }
 
 .menu-ul{
@@ -47,6 +55,8 @@ body{
     background-color: rgb(85, 85, 85);
     padding-left: 5px;
     padding-right: 5px;
+    height: 75px;
+    width: 75px;
 }
 
 /* ------------------------------------ Animacion ............................. */
@@ -61,21 +71,17 @@ body{
 
 .cara{
     position: absolute;
-    height: 17%;
-    width: 32%;
-    left: -67%;
-    top: 37.5%;
-    opacity: 1;
+    height: 15%;
+    width: 20%;
+    left: 10.2%;
+    top: 50.4%;
+    opacity: 0;
+    z-index: 0;
 
     animation-name: parpadeo;
     animation-duration: 0.2s;
     animation-delay: 1s;
 }
-
-@keyframes parpadeo {
-    50%  {opacity: 1;}
-    100%  {animation-delay: 4s;}
-  }
 
 .nariz{
     position: absolute;
@@ -83,17 +89,31 @@ body{
     width: 9%;
     left: 15.5%;
     top: 59%;
-
+    z-index: 1;
     
   animation-name: nariz;
-  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-duration: 7s;
 }
 
 @keyframes nariz {
-    50%  {height: 7%; 
+    20%  {
+        height: 7%; 
         width: 10%;
         left: 15%;
         top: 58%;}
+    50%{
+        height: 6%;
+        width: 9%;
+        left: 15.5%;
+        top: 59%;
+    }
+    100%{
+        height: 6%;
+        width: 9%;
+        left: 15.5%;
+        top: 59%;
+    }
   }
 
 .humo-derecha{
@@ -103,10 +123,11 @@ body{
     left: 23%;
     top: 52%;
     opacity: 0;
+    z-index: 1;
 
     animation-name: humos;
-    animation-duration: 2s;
-    animation-delay: 1s;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
 }
 
 .humo-izquierda{
@@ -117,14 +138,39 @@ body{
     top: 52%;
     transform: scaleX(-1);
     opacity: 0;
+    z-index: 1;
 
     animation-name: humos;
-    animation-duration: 2s;
-    animation-delay: 1s;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
 }
 
 @keyframes humos {
-    50%  {opacity: 1;}
+    20%  {
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
   }
 
   /* ------------------------------------ Animacion ............................. */
+
+#inicio{
+      background-color: rgb(177, 132, 95);
+  }
+
+#about{
+    background-color: rgb(255, 184, 92);
+}
+
+#proyectos{
+    background-color: antiquewhite;
+}
+
+#contacto{
+    background-color: rgb(255, 184, 92);
+}

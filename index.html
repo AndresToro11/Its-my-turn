@@ -13,47 +13,63 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
+    <!-- Fuentes -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div id="cloud-container">
 
         <nav class="menu">
-            <img  class="logo" src="./img/logosmall.png" alt="" srcset="" width="100px" height="100px">
+            <img  class="logo" src="./img/logosmall.png" alt="">
             <ul class="menu-ul">
-                <li class="menu-li"><a class="menu-a" href="#">Inicio</a></li>
-                <li class="menu-li"><a class="menu-a" href="#">Sobre nosotros</a></li>
-                <li class="menu-li"><a class="menu-a" href="#">Contacto</a></li>
+                <li class="menu-li"><a class="menu-a" href="#inicio">Inicio</a></li>
+                <li class="menu-li"><a class="menu-a" href="#about">Sobre mí</a></li>
+                <li class="menu-li"><a class="menu-a" href="#proyectos">Proyectos</a></li>
+                <li class="menu-li"><a class="menu-a" href="#contacto">Contacto</a></li>
             </ul>
         </nav>
 
-    <section class="h-100">
+    <section id="inicio" class="h-100">
             <div class="row h-100">
 
                 <div class="col d-flex">
-                    <img class="toro" src="./img/toro.png" alt="">
-                    <img class="nariz" src="./img/nariz.png" alt="">
+                    <img class="toro" src="./img/toromarron.png" alt="">
+                    <img class="nariz" src="./img/narizmarron.png" alt="">
                     <img class="humo-derecha" src="./img/humo.png" alt="">
                     <img class="humo-izquierda" src="./img/humo.png" alt="">
-                    <img class="cara" src="./img/cara.png" alt="">
+                    <img id="cara" class="cara" src="./img/caramarron.png" alt="">
                 </div>
 
                 <div class="col seccion-principal-nombre">
-                    <h1>Andrés Toro</h1>
+                    <h1 style="color: white;">Andrés Toro</h1>
+                    <h3 style="color: rgb(201, 200, 200);">Desarrollador de Aplicaciones Web</h3>
                 </div>
 
+<!-- 32
+-49
+-4 -->
 
         </div>
     </section>
     
-    <section class="h-100">
-        <h2>Segunda seccion</h2>
+    <section id="about" class="h-100">
+        <h2>Sobre mí</h2>
     </section>
 
-    <section class="h-100">
-        <h2>Tercera seccion</h2>
+    <section id="proyectos" class="h-100">
+        <h2>Proyectos</h2>
+    </section>
+
+    <section id="contacto" class="h-100">
+        <h2>Contacto</h2>
     </section>
 
 </div>
     
+<script src="scripts.js"></script>
 </body>
 </html>
