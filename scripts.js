@@ -16,3 +16,12 @@ function respirar(){
 
    setInterval(parpadear, 3500);
 
+   window.scroll({
+    top: 2500, 
+    left: 0, 
+    behavior: 'smooth'
+  });
+
+   document.querySelector('section').scrollIntoView({ 
+    behavior: 'smooth' 
+  });

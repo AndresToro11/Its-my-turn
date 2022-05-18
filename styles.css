@@ -160,7 +160,10 @@ body{
   /* ------------------------------------ Animacion ............................. */
 
 #inicio{
-      background-color: rgb(177, 132, 95);
+      background-image: url('./img/fondosimple.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
   }
 
 #about{
