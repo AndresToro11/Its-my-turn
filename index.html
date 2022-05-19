@@ -5,71 +5,140 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andrés Toro</title>
-    <link rel="shortcut icon" href="./img/logosmall.png" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
+
+    <!-- Estilos -->
+
+    <link rel="stylesheet" href="./estilos/navbar.css">
+    <link rel="stylesheet" href="./estilos/inicio.css">
+    <link rel="stylesheet" href="./estilos/about.css">
 
     <!-- Bootstrap -->
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
-    <!-- Fuentes -->
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-
 </head>
 <body>
-    <div id="cloud-container">
 
-        <nav class="menu">
-            <img  class="logo" src="./img/logosmall.png" alt="">
-            <ul class="menu-ul">
-                <li class="menu-li"><a class="menu-a" href="#inicio">Inicio</a></li>
-                <li class="menu-li"><a class="menu-a" href="#about">Sobre mí</a></li>
-                <li class="menu-li"><a class="menu-a" href="#proyectos">Proyectos</a></li>
-                <li class="menu-li"><a class="menu-a" href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+    <nav class="menu">
+        <a href="#inicio"> <img class="logo-menu" src="./img/logoToro.png" alt="Logo de toro pequeño"></a>
+        <ul class="ul-menu">
+            <li>
+                <a href="#aptitudes">Aptitudes</a>
+            </li>
+            <li>
+                <a href="#proyectos">Proyectos</a>
+            </li>
+            <li>
+                <a href="#intereses">Intereses</a>
+            </li>
+            <li>
+                <a href="#contacto">Contacto</a>
+            </li>
+        </ul>
+    </nav>
 
-    <section id="inicio" class="h-100">
-            <div class="row h-100">
-
-                <div class="col d-flex">
-                    <img class="toro" src="./img/toromarron.png" alt="">
-                    <img class="nariz" src="./img/narizmarron.png" alt="">
-                    <img class="humo-derecha" src="./img/humo.png" alt="">
-                    <img class="humo-izquierda" src="./img/humo.png" alt="">
-                    <img id="cara" class="cara" src="./img/caramarron.png" alt="">
-                </div>
-
-                <div class="col seccion-principal-nombre">
-                    <h1 style="color: white;">Andrés Toro</h1>
-                    <h3 style="color: rgb(201, 200, 200);">Desarrollador de Aplicaciones Web</h3>
-                </div>
-
-<!-- 32
--49
--4 -->
-
-        </div>
-    </section>
-    
-    <section id="about" class="h-100">
-        <h2>Sobre mí</h2>
+    <section id="inicio" class="inicio h-100">
+        <h1 class="titulo">ANDRÉS TORO</h1>
+        <div class="divisor"></div>
+        <p class="inicio-parrafo">Desarrollador de Aplicaciones Web</p>
+        <a href="#aptitudes"><img class="flecha" src="./img/flecha.png"></img></a>
     </section>
 
-    <section id="proyectos" class="h-100">
+    <section id="aptitudes" class="aptitudes h-100">
+        
+            <h2 class="titulo-aptitudes">¡Bienvenido a mi Portafolio!</h2>
+            <p class="parrafo-aptitudes">
+                Soy un joven programador web junior basado en Barcelona, España.<img src="./img/bcn.png" alt="" width="20px" height="20px"> 
+                Me considero amante a las nuevas tecnologías y al nunca parar de aprender.
+                Aquí te mostraré algunas de mis aptitudes y proyectos en los que he participado, espero disfrutes el recorrido conociendo un poco más sobre mí.
+            </p>
+
+            <div class="cartas">
+                <div class="aptitudes-front">
+                    <img class="front-icon" src="./img/fronticon.png" alt="">
+                    <h3 class="titulo-carta">
+                        Front-end Developer
+                    </h3>
+                    <div class="divisor"></div>
+                    <p class="texto-azul">
+                        Lenguajes que hablo:
+                    </p>
+                    <p class="parrafo-descripcion">
+                        HTML, CSS, JavaScript
+                    </p>
+                    <p class="texto-azul">
+                        Frameworks que uso:
+                    </p class="parrafo-descripcion">
+                    <p>
+                        VueJS, Bootstrap, Materialize
+                    </p>
+                </div>
+
+                <div class="aptitudes-back">
+                    <img class="front-icon" src="./img/backendicon.png" alt="">
+                    <h3 class="titulo-carta">
+                        Back-end Developer
+                    </h3>
+                    <div class="divisor"></div>
+                    <p class="texto-azul">
+                        Lenguajes que hablo:
+                    </p>
+                    <p class="parrafo-descripcion">
+                        Php, Java, MySQL, MariaDB
+                    </p>
+                    <p class="texto-azul">
+                        Frameworks que uso:
+                    </p class="parrafo-descripcion">
+                    <p>
+                        Laravel, MySQL Workbench
+                    </p>
+                </div>
+
+                <div class="aptitudes-blandas">
+                    <img class="front-icon" src="./img/blandas.png" alt="">
+                    <h3 class="titulo-carta">
+                        Habilidades blandas
+                    </h3>
+                    <div class="divisor"></div>
+                    <p class="texto-azul">
+                        * Adaptabilidad
+                    </p>
+                    <p class="parrafo-descripcion">
+                        * Comunicación
+                    </p>
+                    <p class="texto-azul">
+                        * Resolución de problemas
+                    </p class="parrafo-descripcion">
+                    <p>
+                        Liderazgo
+                    </p>
+                </div>
+            </div>
+
+            
+
+        <a href="#proyectos"><img class="flecha" src="./img/flecha.png"></img></a>
+    </section>
+
+    <section id="proyectos" class="proyectos h-100">
         <h2>Proyectos</h2>
+        
+        <a href="#intereses"><img class="flecha" src="./img/flecha.png"></img></a>
     </section>
 
-    <section id="contacto" class="h-100">
+    <section id="intereses" class="intereses h-100">
+        <h2>Intereses</h2>
+        
+        <a href="#contacto"><img class="flecha" src="./img/flecha.png"></img></a>
+    </section>
+
+    <section id="contacto" class="contacto h-100">
         <h2>Contacto</h2>
+        
+        <a href="#inicio"><img class="flecha-final" src="./img/flecha.png"></img></a>
     </section>
 
-</div>
-    
-<script src="scripts.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>

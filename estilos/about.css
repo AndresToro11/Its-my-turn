@@ -1,0 +1,91 @@
+.aptitudes{
+    background-color: rgb(52, 122, 235);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo-aptitudes{
+    padding-top: 5%;
+    padding-bottom: 2%;
+    color: aliceblue;
+}
+
+.parrafo-aptitudes{
+    width: 70%;
+    color: aliceblue;
+    text-align: center;
+}
+
+.cartas{
+    display: flex;
+    align-items: center;
+    height: 70%;
+}
+
+.aptitudes-front{
+    background-color: aliceblue;
+    width: 30%;
+    height: 60%;
+    border-radius: 30px;
+    margin: 3%;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+
+    box-shadow: 0px 0px 5px 5px rgba(205, 205, 205, 0.5);
+}
+
+.aptitudes-back{
+    background-color: aliceblue;
+    width: 30%;
+    height: 60%;
+    border-radius: 30px;
+    margin: 3%;
+    left: 25px;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+
+    
+    box-shadow: 0px 0px 5px 5px rgba(205, 205, 205, 0.5);
+}
+
+.aptitudes-blandas{
+    background-color: aliceblue;
+    width: 30%;
+    height: 60%;
+    border-radius: 30px;
+    margin: 3%;
+    left: 25px;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+
+    
+    box-shadow: 0px 0px 5px 5px rgba(205, 205, 205, 0.5);
+}
+
+.front-icon{
+    width: 20%;
+}
+
+.parrafo-descripcion{
+    margin-bottom: 5%;
+}
+
+.titulo-carta{
+    margin: 5%;
+}

@@ -1,0 +1,62 @@
+.inicio{
+    background-image:  linear-gradient(to bottom, rgba(66, 80, 92, 0.8), rgba(92, 87, 66, 0.8)),url('../img/fondoBody.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.titulo{
+    color: white;
+    font-size: 400%;
+}
+
+.inicio-parrafo{
+    color: white;
+    font-size: 150%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.divisor{
+    border: 2px;
+    border-color: rgb(52, 122, 235);
+    border-style: solid;
+    width: 90px;
+    margin: 1%;
+    border-radius: 50px;
+}
+
+.flecha{
+    transform: rotate(90deg);
+    height: 60px;
+    width: 60px;
+}
+
+.flecha-final{
+    transform: rotate(-90deg);
+    height: 60px;
+    width: 60px;
+}
+
+html{
+    min-height:100%;/* make sure it is at least as tall as the viewport */
+    position:relative;
+}
+body{
+    height:100%; /* force the BODY element to match the height of the HTML element */
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    overflow-x: hidden;
+}
+
+.texto-azul{
+    color: rgb(52, 122, 235);
+}

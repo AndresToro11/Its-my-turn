@@ -1,0 +1,26 @@
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+}
+
+.ul-menu{
+    list-style: none;
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo-menu{
+    height: 60px;
+    width: 60px;
+    margin: 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(233, 232, 232);
+}
