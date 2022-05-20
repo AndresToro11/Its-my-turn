@@ -1,0 +1,16 @@
+.proyectos{
+    background-color: grey;
+}
+
+.img-proyecto{
+    height: 100px;
+    width: 100px;
+}
+
+.proyectos-container{
+
+}
+
+.columna{
+    display: flex;
+}
