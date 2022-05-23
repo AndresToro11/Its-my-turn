@@ -42,11 +42,19 @@
         </ul>
     </nav>
 
-    <section id="inicio" class="inicio h-100">
-        <h1 class="titulo">ANDRÉS TORO</h1>
-        <div class="divisor-azul"></div>
-        <p class="inicio-parrafo">Desarrollador de Aplicaciones Web</p>
-        <a href="#aptitudes"><img class="flecha" src="./img/flecha.png"></img></a>
+    <section id="inicio" class="row inicio h-100 text-center">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center justify-content-center text-center">
+                <div class=" col-lg-12 align-self-end d-flex flex-column align-items-center">
+                    <h1 class="m-4 text-uppercase text-white font-weight-bold">Andrés Toro</h1>
+                    <div class="m-4 divisor-azul"></div>
+                    <p class="m-4 text-white">Desarrollador de Aplicaciones Web</p>
+                </div>
+                <div class=" col-12 align-text-bottom">
+                    <a href="#aptitudes"><img class="flecha" src="./img/flecha.png"></img></a>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="aptitudes" class="aptitudes h-100">
@@ -70,7 +78,7 @@
                    
                 </div>
                 <div class="carousel-inner">
-                  <div class="carousel-item active" data-bs-interval="400000">
+                  <div class="carousel-item active" data-bs-interval="4000">
                     <div class="cartas">
                         <img class="front-icon" src="./img/backendicon.png" alt="">
                         <h3 class="titulo-carta">
@@ -91,7 +99,7 @@
                     </div>
                   </div>
                   
-                  <div class="carousel-item" data-bs-interval="400000">
+                  <div class="carousel-item" data-bs-interval="4000">
                     <div class="cartas">
                         <img class="front-icon" src="./img/fronticon.png" alt="">
                         <h3 class="titulo-carta">
@@ -112,7 +120,7 @@
                     </div>
                   </div>
     
-                  <div class="carousel-item" data-bs-interval="400000">
+                  <div class="carousel-item" data-bs-interval="4000">
                     <div class="cartas">
                         <img class="front-icon" src="./img/blandas.png" alt="">
                         <h3 class="titulo-carta">
@@ -149,29 +157,44 @@
         <a href="#proyectos"><img class="flecha" src="./img/flecha.png"></img></a>
     </section>
 
-    <section id="proyectos" class="proyectos h-100">
+    <section id="proyectos" class="proyectos h-100 align-items-center justify-content-center text-center">
         <h2>Proyectos</h2>
-        
-        <div class="row proyectos-container">
-            <div class="col columna">
+            <div class="row row-cols-md-2 row-cols-1 g-0">
+            <div class="col-6 dynaman d-flex p-4">
                 <div class="row">
-                    <img class="img-proyecto" src="./img/proyecto.PNG" alt="">
-                    <img class="img-proyecto" src="./img/proyecto2.png" alt="">
+                    <img class="img-proyecto i-01" src="./img/proyecto.PNG" alt="">
+                    <img class="img-proyecto i-02" src="./img/proyecto2.png" alt="">
                 </div>
                 <div class="row">
-                    <img class="img-proyecto" src="./img/proyecto3.png" alt="">
-                    <img class="img-proyecto" src="./img/proyecto4.png" alt="">
+                    <img class="img-proyecto i-03" src="./img/proyecto3.png" alt="">
+                    <img class="img-proyecto i-04" src="./img/proyecto4.png" alt="">
                 </div>
             </div>
-            <div class="col columna">
-                <div>
-                    <img class="img-proyecto" src="./img/proyecto21.png" alt="">
-                    <img class="img-proyecto" src="./img/proyecto22.png" alt="">
-                    <img class="img-proyecto" src="./img/proyecto23.png" alt="">
-                    <img class="img-proyecto" src="./img/proyecto24.png" alt="">
+
+            <div class="col-6 dynaman-explicacion d-flex p-4">
+                <div class="row dynaman-explicacion">
+                    <img class="dynaman-explicacion img-proyecto i-01" src="./img/proyecto.PNG" alt="">
+                    <img class="dynaman-explicacion img-proyecto i-02" src="./img/proyecto2.png" alt="">
+                </div>
+                <div class="row dynaman-explicacion">
+                    <img class="dynaman-explicacion img-proyecto i-03" src="./img/proyecto3.png" alt="">
+                    <img class="dynaman-explicacion img-proyecto i-04" src="./img/proyecto4.png" alt="">
+                </div>
+            </div>
+
+
+            <div class="col-6 d-flex broggi p-4">
+                <div class="row">
+                    <img class="img-proyecto i-11" src="./img/proyecto21.PNG" alt="">
+                    <img class=" img-proyecto i-12" src="./img/proyecto22.png" alt="">
+                </div>
+                <div class="row">
+                    <img class=" img-proyecto i-13" src="./img/proyecto23.png" alt="">
+                    <img class=" img-proyecto i-14" src="./img/proyecto24.png" alt="">
                 </div>
             </div>
         </div>
+        
 
         <a href="#intereses"><img class="flecha" src="./img/flecha.png"></img></a>
     </section>

@@ -1,16 +1,42 @@
-.proyectos{
-    background-color: grey;
+ .proyectos{
+    background-color: aliceblue;
+}
+.dynaman:hover{
+    opacity: 0.5;
 }
 
-.img-proyecto{
-    height: 100px;
-    width: 100px;
+.dynaman-explicacion{
+    display: none;
 }
 
-.proyectos-container{
-
+.i-01{
+    border-radius: 50px 0px 0px 0px;
 }
 
-.columna{
-    display: flex;
+.i-02{
+    border-radius: 0px 0px 0px 50px;
 }
+
+.i-03{
+    border-radius: 0px 50px 0px 0px;
+}
+
+.i-04{
+    border-radius: 0px 0px 50px 0px;
+}
+
+.i-11{
+    border-radius: 50px 0px 0px 0px;
+}
+
+.i-12{
+    border-radius: 0px 0px 0px 50px;
+}
+
+.i-13{
+    border-radius: 0px 50px 0px 0px;
+}
+
+.i-14{
+    border-radius: 0px 0px 50px 0px;
+} 
