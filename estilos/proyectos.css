@@ -1,12 +1,78 @@
  .proyectos{
     background-color: aliceblue;
 }
-.dynaman:hover{
-    opacity: 0.5;
+
+
+.dynaman{
+    display: flex;
+    overflow: hidden;
+    max-height: 400px;
+    width: 100%;
+    opacity: 1;
+    display: block;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
 }
 
+
 .dynaman-explicacion{
-    display: none;
+    transition: .4s ease;
+    opacity: 0;
+    position: absolute;
+    top: 250%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    color: aliceblue;
+    font-size: 0.5em;
+    font-family: 'Teko', sans-serif;
+}
+
+.broggi{
+    display: flex;
+    overflow: hidden;
+    max-height: 400px;
+    width: 100%;
+    opacity: 1;
+    display: block;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+
+.broggi-explicacion{
+    transition: .4s ease;
+    opacity: 1;
+    position: absolute;
+    top: 300%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    color: aliceblue;
+    font-size: 1em;
+    font-family: 'Teko', sans-serif;
+}
+
+.contenedoruno:hover .dynaman{
+    filter: brightness(20%) drop-shadow(0 0 0 rgb(25, 0, 255));
+}
+  
+.contenedoruno:hover .dynaman-explicacion {
+    opacity: 1;
+    font-size: 2.5em;
+}
+
+.contenedordos:hover .broggi{
+    filter: brightness(20%) drop-shadow(0 0 0 rgb(25, 0, 255));
+}
+  
+.contenedordos:hover .broggi-explicacion {
+    opacity: 1;
+    font-size: 2.5em;
 }
 
 .i-01{
@@ -14,11 +80,11 @@
 }
 
 .i-02{
-    border-radius: 0px 0px 0px 50px;
+    border-radius: 0px 50px 0px 0px;
 }
 
 .i-03{
-    border-radius: 0px 50px 0px 0px;
+    border-radius: 0px 0px 0px 50px;
 }
 
 .i-04{
@@ -30,11 +96,11 @@
 }
 
 .i-12{
-    border-radius: 0px 0px 0px 50px;
+    border-radius: 0px 50px 0px 0px;
 }
 
 .i-13{
-    border-radius: 0px 50px 0px 0px;
+    border-radius: 0px 0px 0px 50px;
 }
 
 .i-14{

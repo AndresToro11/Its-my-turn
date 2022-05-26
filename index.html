@@ -12,32 +12,33 @@
     <link rel="stylesheet" href="./estilos/inicio.css">
     <link rel="stylesheet" href="./estilos/about.css">
     <link rel="stylesheet" href="./estilos/proyectos.css">
+    <link rel="stylesheet" href="./estilos/footer.css">
 
     <!-- Bootstrap -->
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
+    <!-- Fuentes -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
-    <nav class="menu">
+    <nav id="menu" class="menu">
         <a href="#inicio"> <img class="logo-menu" src="./img/logoToro.png" alt="Logo de toro pequeño"></a>
         <ul class="ul-menu">
             <li>
-                <a href="#inicio">Inicio</a>
+                <a class="link-menu" href="#inicio">Inicio</a>
             </li>
             <li>
-                <a href="#aptitudes">Aptitudes</a>
+                <a class="link-menu"  href="#aptitudes">Aptitudes</a>
             </li>
             <li>
-                <a href="#proyectos">Proyectos</a>
-            </li>
-            <li>
-                <a href="#intereses">Intereses</a>
-            </li>
-            <li>
-                <a href="#contacto">Contacto</a>
+                <a class="link-menu"  href="#proyectos">Proyectos</a>
             </li>
         </ul>
     </nav>
@@ -48,7 +49,7 @@
                 <div class=" col-lg-12 align-self-end d-flex flex-column align-items-center">
                     <h1 class="m-4 text-uppercase text-white font-weight-bold">Andrés Toro</h1>
                     <div class="m-4 divisor-azul"></div>
-                    <p class="m-4 text-white">Desarrollador de Aplicaciones Web</p>
+                    <p class="m-4 inicio-parrafo text-white">Desarrollador de Aplicaciones Web</p>
                 </div>
                 <div class=" col-12 align-text-bottom">
                     <a href="#aptitudes"><img class="flecha" src="./img/flecha.png"></img></a>
@@ -157,60 +158,70 @@
         <a href="#proyectos"><img class="flecha" src="./img/flecha.png"></img></a>
     </section>
 
-    <section id="proyectos" class="proyectos h-100 align-items-center justify-content-center text-center">
-        <h2>Proyectos</h2>
-            <div class="row row-cols-md-2 row-cols-1 g-0">
-            <div class="col-6 dynaman d-flex p-4">
-                <div class="row">
-                    <img class="img-proyecto i-01" src="./img/proyecto.PNG" alt="">
-                    <img class="img-proyecto i-02" src="./img/proyecto2.png" alt="">
+    <section id="proyectos" class="proyectos align-items-center justify-content-center text-center">
+        <div class="row align-self-end d-flex flex-column align-items-center">
+            <h2 class="mt-4 p-4">Proyectos</h2>
+            <div class="m-4 divisor-azul" style="width: 5%;"></div>
+        </div>
+            <div class="row p-4 m-4">
+                <div class="col-3"></div>
+                <div class="col-6">
+                    <div class="contenedoruno">
+                        <div class="row row-cols-2 dynaman">
+                            <img class="col img-proyecto i-01 p-0" src="./img/proyecto.PNG" alt="">
+                            <img class="col img-proyecto i-02 p-0" src="./img/proyecto2.png" alt="">
+                        </div>
+                        <div class="row row-cols-2 dynaman">
+                            <img class="col img-proyecto i-03 p-0" src="./img/proyecto3.png" alt="">
+                            <img class="col img-proyecto i-04 p-0" src="./img/proyecto4.png" alt="">
+                        </div>
+                        <div class="dynaman-explicacion">
+                            <p>Aplicación web educativa multilenguaje con <br> usuarios y juegos creados en JavaScript Vainilla</p>
+                        </div>
+                    </div>
+                        
                 </div>
-                <div class="row">
-                    <img class="img-proyecto i-03" src="./img/proyecto3.png" alt="">
-                    <img class="img-proyecto i-04" src="./img/proyecto4.png" alt="">
-                </div>
+                <div class="col-3"></div>
             </div>
 
-            <div class="col-6 dynaman-explicacion d-flex p-4">
-                <div class="row dynaman-explicacion">
-                    <img class="dynaman-explicacion img-proyecto i-01" src="./img/proyecto.PNG" alt="">
-                    <img class="dynaman-explicacion img-proyecto i-02" src="./img/proyecto2.png" alt="">
+            <div class="row p-4 m-4">
+                <div class="col-3"></div>
+                <div class="col-6">
+                    <div class="contenedordos">
+                        <div class="row broggi row-cols-2">
+                            <img class="img-proyecto i-11 p-0" src="./img/proyecto21.PNG" alt="">
+                            <img class="img-proyecto i-12 p-0" src="./img/proyecto22.png" alt="">
+                        </div>
+                        <div class="row broggi row-cols-2">
+                            <img class="img-proyecto i-13 p-0" src="./img/proyecto23.png" alt="">
+                            <img class="img-proyecto i-14 p-0" src="./img/proyecto24.png" alt="">
+                        </div>
+                        
+                        <div class="broggi-explicacion">
+                            <p>Proyecto de landing page con juegos <br> creados en JavaScript Vainilla</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="row dynaman-explicacion">
-                    <img class="dynaman-explicacion img-proyecto i-03" src="./img/proyecto3.png" alt="">
-                    <img class="dynaman-explicacion img-proyecto i-04" src="./img/proyecto4.png" alt="">
-                </div>
+                <div class="col-3"></div>
             </div>
 
 
-            <div class="col-6 d-flex broggi p-4">
-                <div class="row">
-                    <img class="img-proyecto i-11" src="./img/proyecto21.PNG" alt="">
-                    <img class=" img-proyecto i-12" src="./img/proyecto22.png" alt="">
-                </div>
-                <div class="row">
-                    <img class=" img-proyecto i-13" src="./img/proyecto23.png" alt="">
-                    <img class=" img-proyecto i-14" src="./img/proyecto24.png" alt="">
-                </div>
-            </div>
+        <a href="#inicio"><img class="flecha-final" src="./img/flecha.png"></img></a>
+    </section>
+
+    <section id="footer" class="footer">
+        <div>
+            <a href="https://www.instagram.com/elandrestoro/"><img  class="img-footer" src="./img/instagram.png" alt="" srcset="" width="35px" height="35px"></a>
+            <a href="https://github.com/AndresToro11"><img  class="img-footer"  src="./img/github.png" alt="" srcset="" width="60px" height="35px"></a>
+            <a href="https://www.linkedin.com/in/andr%C3%A9s-toro-pereira-948b461b4/"><img  class="img-footer"  src="./img/linkedIn.png" alt="" srcset="" width="40px" height="35px"></a>
+        </div>
+        <div>
+            <p>
+                Andrés Toro © 2022 - Desarrollador de Aplicaciones Web
+            </p>
         </div>
         
 
-        <a href="#intereses"><img class="flecha" src="./img/flecha.png"></img></a>
-    </section>
-
-    <section id="intereses" class="intereses h-100">
-        <h2>Intereses</h2>
-
-
-
-        <a href="#contacto"><img class="flecha" src="./img/flecha.png"></img></a>
-    </section>
-
-    <section id="contacto" class="contacto h-100">
-        <h2>Contacto</h2>
-        
-        <a href="#inicio"><img class="flecha-final" src="./img/flecha.png"></img></a>
     </section>
 
     <script src="scripts.js"></script>

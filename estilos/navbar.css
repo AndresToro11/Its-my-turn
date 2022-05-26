@@ -4,6 +4,7 @@
     justify-content: space-around;
     position: fixed;
     width: 100%;
+    z-index: 5;
 }
 
 .ul-menu{
@@ -20,7 +21,7 @@
     margin: 10px;
 }
 
-nav ul li a{
+.link-menu{
     text-decoration: none;
     color: rgb(233, 232, 232);
 }
